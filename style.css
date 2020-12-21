@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+.page {
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  background-color: white;
+}
+
+.poke-event {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-get {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  background-color: unset;
+  border: unset;
+}
+
+.button-get__display {
+  height: 500px;
+  width: 500px;
+}
+
+.button-get:focus {
+  outline: 0;
+}
+
+.button-reset {
+  color: white;
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 70%;
+  padding: 15px;
+  background-color: black;
+  border: unset;
+  border-radius: 30px;
+}
+
+.footnote {
+  text-align: center;
+  font-size: 10px;
+}
+
+.poke-image {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  height: 40%;
+  width: auto;
+  background-color: unset;
+  border: unset;
+  opacity: 0;
+  height: 300px;
+  width: 300px;
+}
+
+.poke-type {
+  width: 500px;
+  height: 100px;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.pokeball__rotate {
+  -webkit-transform: rotate(1000deg);
+          transform: rotate(1000deg);
+  -webkit-transition: all 4s cubic-bezier(0.68, 0.72, 0.75, 0.25);
+  transition: all 4s cubic-bezier(0.68, 0.72, 0.75, 0.25);
+  -webkit-animation: fade-out 4000ms ease-out both;
+          animation: fade-out 4000ms ease-out both;
+}
+
+.poke-image__show {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: all 4s cubic-bezier(0.68, 0.72, 0.75, 0.25);
+  transition: all 4s cubic-bezier(0.68, 0.72, 0.75, 0.25);
+  -webkit-animation: fade-in 4000ms ease-out both;
+          animation: fade-in 4000ms ease-out both;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
